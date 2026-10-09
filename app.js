@@ -157,12 +157,12 @@ if (playerEl) {
     if (state.current < 500) selectEpisode(state.current + 1);
   });
 }
-$('#startWatching')?.addEventListener('click', () => { window.location.href = '/episodes.html'; });
+$('#startWatching')?.addEventListener('click', () => { window.location.href = 'episodes.html'; });
 $('#continueButton')?.addEventListener('click', () => selectEpisode(userProgress.current));
 $$('[data-scroll="watch"]').forEach((button) => button.addEventListener('click', () => {
   const watchSection = document.querySelector('#watch');
   if (watchSection) watchSection.scrollIntoView({ behavior: 'smooth' });
-  else window.location.href = '/episodes.html#watch';
+  else window.location.href = 'episodes.html#watch';
 }));
 $$('[data-unavailable]').forEach((button) => button.addEventListener('click', () => toast(`${button.dataset.unavailable} غير متاح حاليًا — سنخبرك عند توفره`)));
 $('#themeHint')?.addEventListener('click', () => toast('موهو في وضع العرض الداكن — مصمم للمشاهدة الطويلة'));

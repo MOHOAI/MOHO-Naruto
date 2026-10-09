@@ -84,7 +84,7 @@
 }
 
 body:before {
-  background-image: linear-gradient(rgba(10, 13, 19, 0.25), rgba(10, 13, 19, 0.85)), url('/bg.jpg');
+  background-image: linear-gradient(rgba(10, 13, 19, 0.25), rgba(10, 13, 19, 0.85)), url('bg.jpg');
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -136,11 +136,11 @@ body:before {
 /* Responsive Background Overrides */
 @media (min-width: 681px) {
   body:before {
-    background-image: linear-gradient(rgba(10, 13, 19, 0.25), rgba(10, 13, 19, 0.85)), url('/desktop_bg.jpg');
+    background-image: linear-gradient(rgba(10, 13, 19, 0.25), rgba(10, 13, 19, 0.85)), url('desktop_bg.jpg');
   }
 }
 @media (max-width: 680px) {
   body:before {
-    background-image: linear-gradient(rgba(10, 13, 19, 0.25), rgba(10, 13, 19, 0.85)), url('/mobile_bg.jpg');
+    background-image: linear-gradient(rgba(10, 13, 19, 0.25), rgba(10, 13, 19, 0.85)), url('mobile_bg.jpg');
   }
 }
